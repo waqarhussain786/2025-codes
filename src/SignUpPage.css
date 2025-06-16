@@ -1,0 +1,118 @@
+/* General Body and Container */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a8d8e0, #e0f2f7); /* Soft blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure container takes full viewport height */
+  width: 100%;
+}
+
+/* Signup Card */
+.signup-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 450px; /* Increased max-width for better appearance */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.signup-title {
+  color: #333333;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: calc(100% - 20px); /* Account for padding */
+  padding: 12px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff; /* Highlight on focus */
+  outline: none;
+}
+
+/* Button */
+.signup-button {
+  background-color: #28a745; /* Vibrant green */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.signup-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Messages */
+.error-message {
+  color: #dc3545; /* Red for errors */
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.success-message {
+  color: #28a745; /* Green for success */
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+/* Login Link */
+.login-link {
+  margin-top: 25px;
+  color: #666666;
+  font-size: 0.95em;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
