@@ -175,7 +175,6 @@ const SignUpPage = () => {
 // Main App Component
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home'); // State to manage current page
-
   // Function to render the active page component
   const renderPage = () => {
     switch (currentPage) {
