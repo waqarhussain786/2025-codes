@@ -1,7 +1,7 @@
 {
   "name": "store-website",
   "version": "0.1.0",
-  "homepage": "https://waqarhussain786.github.io/2025-codes/",
+  "homepage": "https://waqarhussain786.github.io/2025-codes",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
