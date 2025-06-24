@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { evaluate } from "mathjs";
 
 const Calculator = () => {
   const [input, setInput] = useState("");
@@ -8,21 +9,22 @@ const Calculator = () => {
       setInput("");
     } else if (value === "=") {
       try {
-        setInput(eval(input).toString());
-      } catch {
+        const result = evaluate(input);
+        setInput(result.toString());
+      } catch (err) {
         setInput("Error");
       }
     } else {
-      setInput(input + value);
+      setInput((prev) => prev + value);
     }
   };
 
   const buttons = [
-    "/", "*", "-", "+",
-    "7", "8", "9", ".",
-    "4", "5", "6", "C",
-    "1", "2", "3", "=",
-    "0"
+    "7", "8", "9", "/",
+    "4", "5", "6", "*",
+    "1", "2", "3", "-",
+    "0", ".", "=", "+",
+    "C"
   ];
 
   return (
